@@ -29,6 +29,21 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        label, input {
+            display: block;
+        }
+
+        input {
+            margin: 10px 0 1em 0;
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            margin-top: 1.5em;
+        }
     </style>
 </head>
 <body>
