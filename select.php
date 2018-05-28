@@ -57,9 +57,9 @@
            <td><?php echo $cuti->getLamaCuti() ?></td>
            <td><?php echo $cuti->getKeterangan() ?></td>
            <td>
-               <a href="?page=edit&id=<?php echo $cuti->getNo() ?>">Edit</a>
+               <a href="?page=edit&id=<?php echo $cuti->getId() ?>">Edit</a>
                |
-               <a href="?page=delete&id=<?php echo $cuti->getNo() ?>">Delete</a>
+               <a href="?page=delete&id=<?php echo $cuti->getId() ?>">Delete</a>
            </td>
        </tr>
 
