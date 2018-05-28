@@ -26,5 +26,5 @@ $cuti = $stmt->fetch();
     <label for="input_keterangan">Keterangan</label>
     <input type="text" id="input_keterangan" name="keterangan" value="<?php echo $cuti->getKeterangan() ?>">
 
-    <input type="submit" value="Input Data">
+    <input type="submit" value="Edit Data">
 </form>
