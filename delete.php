@@ -34,6 +34,7 @@ $cuti = $stmt->fetch();
     </tbody>
 </table>
 <form action="aksi_delete.php" method="POST" style="margin-top: 1em">
+    <input type="hidden" name="id" value="<?php echo $id ?>">
     <button type="submit">Yakin</button>
     <button type="button" onclick="history.back();">Tidak</button>
 </form>
