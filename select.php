@@ -1,4 +1,15 @@
-<table>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table tr td {
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+<table border="1">
     <thead>
         <tr>
             <th>No.</th>
@@ -18,6 +29,7 @@
            <td>Sakit</td>
            <td>
                <a href="?page=edit&id=1">Edit</a>
+               |
                <a href="?page=delete&id=1">Delete</a>
            </td>
        </tr> 
