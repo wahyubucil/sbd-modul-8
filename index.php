@@ -30,6 +30,30 @@
             transform: translateX(-50%);
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        table tr td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .btn-input {
+            text-decoration: none;
+            color: #304ffe;
+            border: 1px solid #304ffe;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .btn-input:hover {
+            background: #304ffe;
+            color: #ffffff;
+        }
+
         label, input {
             display: block;
         }

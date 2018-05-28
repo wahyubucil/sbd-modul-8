@@ -7,31 +7,6 @@
     $dataCuti = $statement->fetchAll(PDO::FETCH_CLASS, "Cuti");
 ?>
 
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1em;
-    }
-
-    table tr td {
-        padding: 5px;
-        text-align: center;
-    }
-
-    .btn-input {
-        text-decoration: none;
-        color: #304ffe;
-        border: 1px solid #304ffe;
-        padding: 10px;
-        display: inline-block;
-    }
-
-    .btn-input:hover {
-        background: #304ffe;
-        color: #ffffff;
-    }
-</style>
 <a href="?page=input" class="btn-input">INPUT DATA</a>
 <table border="1">
     <thead>
