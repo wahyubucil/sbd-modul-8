@@ -1,5 +1,5 @@
 <h2>Input Data</h2>
-<form action="aksi_input.php">
+<form action="aksi_input.php" method="POST">
     <label for="input_nik">NIK</label>
     <input type="text" id="input_nik" name="nik">
     <label for="input_tgl_mulai">Tanggal Mulai</label>
