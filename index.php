@@ -19,11 +19,24 @@
             color: #ffffff;
             float: left;
         }
+
+        main {
+            float: left;
+            margin-top: 1.5em;
+            width: 100%;
+            max-width: 768px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>TABEL CUTI</h1>
     </header>
+    <main>
+
+    </main>
 </body>
 </html>
