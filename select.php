@@ -1,3 +1,12 @@
+<?php
+    require_once "connection.php";
+    require_once "Cuti.php";
+
+    $statement = $conn->query("SELECT * FROM cuti");
+
+    $dataCuti = $statement->fetchAll(PDO::FETCH_CLASS, "Cuti");
+?>
+
 <style>
     table {
         width: 100%;
@@ -21,17 +30,27 @@
         </tr>
     </thead>
     <tbody>
-       <tr>
-           <td>1</td>
-           <td>20140012</td>
-           <td>2018-10-10</td>
-           <td>3 Hari</td>
-           <td>Sakit</td>
+        <?php
+            $no = 1;
+            foreach ($dataCuti as $cuti) {
+        ?>
+        
+        <tr>
+           <td><?php echo $no ?></td>
+           <td><?php echo $cuti->getNik() ?></td>
+           <td><?php echo $cuti->getTglMulai() ?></td>
+           <td><?php echo $cuti->getLamaCuti() ?></td>
+           <td><?php echo $cuti->getKeterangan() ?></td>
            <td>
-               <a href="?page=edit&id=1">Edit</a>
+               <a href="?page=edit&id=<?php echo $cuti->getNo() ?>">Edit</a>
                |
-               <a href="?page=delete&id=1">Delete</a>
+               <a href="?page=delete&id=<?php echo $cuti->getNo() ?>">Delete</a>
            </td>
-       </tr> 
+       </tr>
+
+        <?php
+                $no++;
+            }
+        ?>
     </tbody>
 </table>
