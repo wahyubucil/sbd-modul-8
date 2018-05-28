@@ -4,8 +4,8 @@ class Cuti {
 
     protected $no;
     protected $nik;
-    protected $tglMulai;
-    protected $lamaCuti;
+    protected $tgl_mulai;
+    protected $lama_cuti;
     protected $keterangan;
 
     public function getNo() {
@@ -25,19 +25,19 @@ class Cuti {
     }
 
     public function getTglMulai() {
-        return $this->tglMulai;
+        return $this->tgl_mulai;
     }
 
     public function setTglMulai($tglMulai) {
-        $this->tglMulai = $tglMulai;
+        $this->tgl_mulai = $tglMulai;
     }
 
     public function getLamaCuti() {
-        return $this->lamaCuti;
+        return $this->lama_cuti;
     }
 
     public function setLamaCuti($lamaCuti) {
-        $this->lamaCuti = $lamaCuti;
+        $this->lama_cuti = $lamaCuti;
     }
 
     public function getKeterangan() {
