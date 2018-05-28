@@ -36,7 +36,7 @@
         <h1>TABEL CUTI</h1>
     </header>
     <main>
-
+        
     </main>
 </body>
 </html>
