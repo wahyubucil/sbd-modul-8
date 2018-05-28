@@ -37,7 +37,20 @@
     </header>
     <main>
         <?php
-            include "select.php";
+            $page = isset($_GET['page']) ? $_GET['page'] : '';
+            switch ($page) {
+                case "input":
+                    include "input.php";
+                    break;
+                case "edit":
+                    include "edit.php";
+                    break;
+                case "delete":
+                    include "delete.php";
+                    break;
+                default:
+                    include "select.php";
+            }
         ?>
     </main>
 </body>
