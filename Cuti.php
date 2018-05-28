@@ -2,18 +2,18 @@
 
 class Cuti {
 
-    protected $no;
+    protected $id;
     protected $nik;
     protected $tgl_mulai;
     protected $lama_cuti;
     protected $keterangan;
 
-    public function getNo() {
-        return $this->no;
+    public function getId() {
+        return $this->id;
     }
 
-    public function setNo($no) {
-        $this->no = $no;
+    public function setId($id) {
+        $this->id = $id;
     }
 
     public function getNik() {
